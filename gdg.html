@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student-created developer community event webpage demo.">
+  <title>DevConnect Kolkata 2026 | Interactive Event Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="notice">
+    <span>⚡ Student project demo · Independent website, not an official GDG page</span>
+  </div>
+
+  <header class="navbar">
+    <a class="brand" href="#home" aria-label="DevConnect home">
+      <span class="brand-mark" aria-hidden="true">
+        <span class="c-blue">G</span><span class="c-red">D</span><span class="c-yellow">G</span><span class="c-green">.</span>
+      </span>
+      <span>DevConnect <small>KOLKATA '26</small></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#faq">FAQ</a>
+      <a href="#register" class="nav-cta">Get Demo Pass</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" type="button" title="Toggle theme">
+        <span class="theme-icon" id="themeIcon">🌙</span>
+      </button>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation" aria-expanded="false"
+        aria-controls="navLinks" type="button">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="pill"><span class="dot"></span> STUDENT EVENT DEMO · KOLKATA</span>
+        <p class="eyebrow">LEARN. BUILD. SHIP.</p>
+        <h1>Where Kolkata's student builders <span>connect.</span></h1>
+        <p class="hero-description">
+          Dive into modern web engineering, cloud-native tools, and practical AI workshops in this interactive developer community showcase.
+        </p>
+
+        <!-- Countdown Timer -->
+        <div class="countdown" id="countdown" aria-label="Countdown to event">
+          <div class="time-box"><strong id="days">00</strong><span>DAYS</span></div>
+          <div class="time-box"><strong id="hours">00</strong><span>HRS</span></div>
+          <div class="time-box"><strong id="minutes">00</strong><span>MIN</span></div>
+          <div class="time-box"><strong id="seconds">00</strong><span>SEC</span></div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#register" class="button primary">Generate Demo Pass ↗</a>
+          <a href="#schedule" class="button secondary">Explore Tracks</a>
+        </div>
+
+        <div class="event-meta">
+          <div><span>DATE</span><strong>21 November 2026</strong></div>
+          <div><span>VENUE</span><strong>Biswa Bangla Convention · Sample</strong></div>
+          <div><span>FORMAT</span><strong>In-Person + Live Labs</strong></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Colorful developer community artwork">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="art-card">
+          <div class="code-top">
+            <i></i><i></i><i></i>
+            <span>devconnect_2026.ts</span>
+          </div>
+          <div class="code-content">
+            <p><span class="code-purple">interface</span> <span class="code-yellow">DeveloperEvent</span> {</p>
+            <p class="indent">city: <span class="code-green">"Kolkata"</span>;</p>
+            <p class="indent">tracks: [<span class="code-green">"Web"</span>, <span class="code-green">"AI"</span>, <span class="code-green">"Cloud"</span>];</p>
+            <p class="indent">networking: <span class="code-blue">true</span>;</p>
+            <p>}</p>
+            <p class="code-comment">// Ready to deploy your next big idea?</p>
+          </div>
+          <div class="art-footer">
+            <span>✦</span> STATUS: REGISTRATION DEMO OPEN
+          </div>
+        </div>
+        <span class="float-tag tag-one">&lt;/&gt; Web &amp; AI</span>
+        <span class="float-tag tag-two">🚀 IDEAS → IMPACT</span>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats" aria-label="Event highlights">
+      <div><strong>04</strong><span>Tech Tracks</span></div>
+      <div><strong>06+</strong><span>Hands-on Sessions</span></div>
+      <div><strong>300+</strong><span>Student Peers (Sample)</span></div>
+      <div><strong>100%</strong><span>Beginner Friendly</span></div>
+    </section>
+
+    <!-- ABOUT / TRACKS -->
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">WHY JOIN US?</p>
+        <h2>Built for curious <span>minds.</span></h2>
+        <p>A sample event blueprint designed for student developers, designers, and makers.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon icon-blue">&lt;/&gt;</div>
+          <h3>Modern Web &amp; UI</h3>
+          <p>Master semantic HTML, modern CSS layouts, accessibility, and reactive frontend architecture.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon icon-red">✦</div>
+          <h3>AI &amp; Cloud Labs</h3>
+          <p>Go beyond prompts—learn how to integrate APIs, deploy serverless apps, and build real tools.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon icon-green">⚡</div>
+          <h3>Lightning Showcases</h3>
+          <p>Demo your semester projects in 5-minute peer slots and get constructive feedback from mentors.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FILTERABLE SCHEDULE -->
+    <section class="section schedule-section" id="schedule">
+      <div class="section-heading">
+        <p class="eyebrow">THE AGENDA</p>
+        <h2>Interactive <span>schedule.</span></h2>
+        <p>Filter sessions by track. (Illustrative demo schedule)</p>
+      </div>
+
+      <div class="schedule-filters" role="tablist" aria-label="Filter schedule by track">
+        <button class="filter-btn active" data-filter="all" type="button">All Sessions</button>
+        <button class="filter-btn" data-filter="web" type="button">Web &amp; UI</button>
+        <button class="filter-btn" data-filter="ai" type="button">AI &amp; Cloud</button>
+        <button class="filter-btn" data-filter="community" type="button">Community</button>
+      </div>
+
+      <div class="schedule-list" id="scheduleList">
+        <article class="schedule-item" data-track="community">
+          <span class="schedule-time">09:30 AM</span>
+          <div>
+            <span class="track-badge badge-green">Community</span>
+            <h3>Check-in &amp; Morning Chai Networking</h3>
+            <p>Pick up your badge, meet fellow student builders, and form lightning-project teams.</p>
+          </div>
+          <span class="schedule-number">01</span>
+        </article>
+
+        <article class="schedule-item" data-track="web">
+          <span class="schedule-time">10:30 AM</span>
+          <div>
+            <span class="track-badge badge-blue">Web &amp; UI</span>
+            <h3>CSS Grid, Clamp &amp; Theme Systems Without Frameworks</h3>
+            <p>Learn how to craft resilient, dark-mode-ready layouts using pure modern CSS.</p>
+          </div>
+          <span class="schedule-number">02</span>
+        </article>
+
+        <article class="schedule-item" data-track="ai">
+          <span class="schedule-time">11:45 AM</span>
+          <div>
+            <span class="track-badge badge-red">AI &amp; Cloud</span>
+            <h3>Building Smart Web Apps with Generative AI APIs</h3>
+            <p>Hands-on walkthrough of structured outputs, streaming UIs, and safety guardrails.</p>
+          </div>
+          <span class="schedule-number">03</span>
+        </article>
+
+        <article class="schedule-item" data-track="web">
+          <span class="schedule-time">01:30 PM</span>
+          <div>
+            <span class="track-badge badge-blue">Web &amp; UI</span>
+            <h3>Web Accessibility (a11y) Audit Workshop</h3>
+            <p>Test real student projects with keyboard navigation, ARIA states, and contrast tools.</p>
+          </div>
+          <span class="schedule-number">04</span>
+        </article>
+
+        <article class="schedule-item" data-track="community">
+          <span class="schedule-time">03:00 PM</span>
+          <div>
+            <span class="track-badge badge-yellow">Community</span>
+            <h3>Student Project Showcase &amp; Closing Demo</h3>
+            <p>Present what you built, exchange GitHub profiles, and wrap up the day.</p>
+          </div>
+          <span class="schedule-number">05</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION -->
+    <section class="section" id="faq">
+      <div class="section-heading">
+        <p class="eyebrow">GOT QUESTIONS?</p>
+        <h2>Frequently asked <span>questions.</span></h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Is this a real event registration page?</summary>
+          <p>No—this is a front-end student portfolio project demonstrating responsive design, accessibility, and vanilla JavaScript interactivity. No data leaves your browser.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Who is this sample event concept designed for?</summary>
+          <p>It is modeled around college students, self-taught learners, and beginner developers in Kolkata looking to explore web and cloud technologies.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What happens when I submit the registration form below?</summary>
+          <p>JavaScript intercepts the form submission and generates an interactive digital "Demo Pass" right on your screen with your chosen role and track.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- REGISTRATION & PASS GENERATOR -->
+    <section class="register-section" id="register">
+      <div class="register-copy">
+        <p class="eyebrow">YOUR NEXT STEP</p>
+        <h2>Claim your interactive <span>demo pass.</span></h2>
+        <p>Test the client-side ticket generator below. Everything runs locally in your browser.</p>
+        <div class="register-points">
+          <p>✓ Instant digital badge preview</p>
+          <p>✓ Zero server storage or tracking</p>
+          <p>✓ Built with accessible HTML5 validation</p>
+        </div>
+
+        <!-- Generated Ticket Preview (Hidden until form submit) -->
+        <div class="ticket-card" id="ticketCard" hidden aria-live="polite">
+          <div class="ticket-header">
+            <span>DEVCONNECT KOLKATA · DEMO PASS</span>
+            <strong id="ticketId">#DC-2026</strong>
+          </div>
+          <div class="ticket-body">
+            <div>
+              <small>ATTENDEE</small>
+              <h4 id="ticketName">Alex Kumar</h4>
+            </div>
+            <div class="ticket-meta-grid">
+              <div>
+                <small>ROLE</small>
+                <span id="ticketRole">Student</span>
+              </div>
+              <div>
+                <small>PREFERRED TRACK</small>
+                <span id="ticketTrack">Web &amp; UI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="form-card" id="registrationForm" novalidate>
+        <h3>Demo Registration</h3>
+        <p class="form-subtitle">Fill in sample details to generate your badge.</p>
+
+        <label for="fullName">Your Name</label>
+        <input id="fullName" name="fullName" type="text"
+          placeholder="e.g. Riya Sen" maxlength="60" required>
+
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email"
+          placeholder="riya@example.com" required>
+
+        <div class="form-row">
+          <div>
+            <label for="attendeeRole">Your Role</label>
+            <select id="attendeeRole" name="attendeeRole" required>
+              <option value="">Select role</option>
+              <option value="Student">Student</option>
+              <option value="Frontend Dev">Frontend Dev</option>
+              <option value="UI/UX Designer">UI/UX Designer</option>
+              <option value="Tech Enthusiast">Tech Enthusiast</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="preferredTrack">Favorite Track</label>
+            <select id="preferredTrack" name="preferredTrack" required>
+              <option value="">Select track</option>
+              <option value="Web & UI">Web &amp; UI</option>
+              <option value="AI & Cloud">AI &amp; Cloud</option>
+              <option value="Open Source">Open Source</option>
+            </select>
+          </div>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" id="consent" required>
+          <span>I understand this is a front-end demo and no real data is stored.</span>
+        </label>
+
+        <button class="button primary submit-button" type="submit">
+          Generate My Demo Pass →
+        </button>
+
+        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-mark">
+        <span class="c-blue">G</span><span class="c-red">D</span><span class="c-yellow">G</span><span class="c-green">.</span>
+      </span>
+      <span>DevConnect <small>KOLKATA</small></span>
+    </a>
+    <p>Independent student website demo · Built with HTML, CSS &amp; Vanilla JS · 2026</p>
+    <p class="footer-disclaimer">
+      This project is not affiliated with or endorsed by Google or Google Developer Groups.
+      GDG is referenced only to describe the inspiration for this educational challenge.
+    </p>
+    <a href="https://developers.google.com/community/gdg/"
+       target="_blank" rel="noopener noreferrer">Explore the official GDG program ↗</a>
+  </footer>
+
+</body>
+</html>
